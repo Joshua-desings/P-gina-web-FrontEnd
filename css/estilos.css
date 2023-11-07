@@ -127,7 +127,7 @@ header .contenedor-header{
 }
 
 
-/* profesores */
+/* Profesores */
 
 .cartas-profesor{
     display: flex;
@@ -253,7 +253,6 @@ main .sobre-nosotros{
 .form-group input[type="submit"]:hover {
     background-color: #45a049;
 }
-
 
 /* Estilos para el formulario */
 .formulario {
