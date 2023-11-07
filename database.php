@@ -1,9 +1,6 @@
 <?php
 // Establece la configuración de la base de datos
-$host = "localhost"; // Host de la base de datos
-$usuario = "root"; // Nombre de usuario de la base de datos
-$contrasena = "Fy4wi3uKvkXVXYKW"; // Contraseña de la base de datos
-$base_de_datos = "formulario"; // Nombre de la base de datos
+require_once("config.php"); // Archivo requerido para obtener las credenciales
 
 // Crea una conexión a la base de datos utilizando la configuración anterior
 $conexion = new mysqli($host, $usuario, $contrasena, $base_de_datos);
