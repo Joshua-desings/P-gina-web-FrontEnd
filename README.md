@@ -30,7 +30,9 @@ Para utilizar este proyecto, sigue los siguientes pasos:
 
 4. Copia el contenido de este repositorio en la carpeta "www" de WampServer. Esta es la carpeta donde debes colocar tus proyectos web para que puedas acceder a ellos localmente.
 
-5. Crea la base de datos y la tabla en MySQL para almacenar los datos del formulario. Puedes utilizar la siguiente estructura de tabla como referencia:
+6. Crea un archivo llamado `config.php` en la raíz del proyecto y configura la conexión a tu base de datos.
+   
+7. Crea la base de datos y la tabla en MySQL para almacenar los datos del formulario. Puedes utilizar la siguiente estructura de tabla como referencia:
 
    ```sql
    CREATE TABLE datos_formulario (
@@ -43,13 +45,7 @@ Para utilizar este proyecto, sigue los siguientes pasos:
    );
    ```
 
-6. Crea un archivo llamado `config.php` en la raíz del proyecto y configura la conexión a tu base de datos.
-
-7. Abre tu navegador web y accede al proyecto escribiendo `http://localhost/tu-proyecto` en la barra de direcciones, donde `tu-proyecto` es el nombre de la carpeta que contiene los archivos del proyecto.
-
-8. Abre el archivo `index.html` en tu navegador web para visualizar la página principal.
-
-9. Explora el código fuente de `index.html` y `css/estilos.css` para comprender la estructura y estilos de la página.
+8. Abre tu navegador web y accede al proyecto escribiendo `http://localhost/tu-proyecto` en la barra de direcciones, donde `tu-proyecto` es el nombre de la carpeta que contiene los archivos del proyecto y disfruta la pagina.
 
 Con estos pasos, podrás configurar y ejecutar el proyecto en tu entorno local.
 
