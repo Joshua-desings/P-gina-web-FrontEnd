@@ -57,6 +57,23 @@ Utiliza este proyecto como punto de partida para tus propios proyectos web.
 Experimenta con el diseño y los estilos para personalizar la apariencia de la página de acuerdo y
 Asegúrate de seguir buenas prácticas de programación y documentación en tu desarrollo.
 
+## Nuevas Mejoras 
+
+## Menú Desplegable
+- Hemos incorporado un menú desplegable para mejorar la navegación del usuario. Este elemento proporciona una experiencia más intuitiva, especialmente en dispositivos móviles, facilitando el acceso a las distintas secciones de la página.
+
+## Carrusel de Imágenes
+- Se ha agregado un carrusel de imágenes que enriquece visualmente la presentación de la información. Este componente dinámico permite resaltar contenido relevante de manera atractiva, mejorando la interacción del usuario con la página.
+
+## Efecto de Parallax al Hacer Scroll
+- Implementamos un efecto de parallax al hacer scroll, añadiendo profundidad y dinamismo a la experiencia de navegación. Este efecto visual crea una sensación de inmersión al desplazarse por la página, elevando su atractivo estético.
+
+## Nuevo Diseño Responsivo
+- Hemos realizado mejoras significativas en el diseño responsivo de la página para garantizar una visualización óptima en una amplia gama de dispositivos, desde computadoras de escritorio hasta dispositivos móviles. El contenido ahora se adapta de manera fluida, asegurando una experiencia coherente y agradable para todos los usuarios.
+
+## Otras Mejoras Menores
+- Se han realizado ajustes y mejoras menores en diversos aspectos del proyecto para optimizar la usabilidad y el rendimiento general. Estos cambios incluyen correcciones de estilo y ajustes de diseño.
+
 ## Autores (Estudiantes de Ingenieria en Computación)
 
 - Yony Araujo
