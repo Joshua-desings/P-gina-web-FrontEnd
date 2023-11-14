@@ -74,6 +74,22 @@ Asegúrate de seguir buenas prácticas de programación y documentación en tu d
 ## Otras Mejoras Menores
 - Se han realizado ajustes y mejoras menores en diversos aspectos del proyecto para optimizar la usabilidad y el rendimiento general. Estos cambios incluyen correcciones de estilo y ajustes de diseño.
 
+## Figma
+
+Links de los bosquejos hechos en la herramienta de diseño Figma
+  
+- Wireframes: 
+https://www.figma.com/file/u0Ad9R7i264Y5hgvNfxKg4/WireFrames-(Mobile)?type=design&node-id=0%3A1&mode=design&t=quvgbvMWUCr9M5N0-1
+
+- Bosquejo en PC:
+https://www.figma.com/file/XhSwePuNZZFTpy4XnoM6Mt/P%C3%A1gina-web-(Pc)?type=design&mode=design&t=dnOxZzpl9VIsQvxu-1
+
+- Bosquejo en Tablet:
+https://www.figma.com/file/F8rPfohggJ5OY13uVQh9iw/P%C3%A1gina-web-(Tablet)?type=design&node-id=1%3A2&mode=design&t=KglHV1z6Wr4xj1cQ-1
+
+- Bosquejo en Telefonos:
+https://www.figma.com/file/BvxWcT5Z3WQvaRVzBm0Ddj/P%C3%A1gina-web-(Tel%C3%A9fonos)?type=design&node-id=0%3A1&mode=design&t=4jqOwyeIuHva97W9-1
+
 ## Autores (Estudiantes de Ingenieria en Computación)
 
 - Yony Araujo
