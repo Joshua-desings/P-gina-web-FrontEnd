@@ -1,205 +1,227 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <title>UVM</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="Bienvenido a la Universidad Valle del Momboy (UVM). Ofrecemos formación académica de calidad en diversas disciplinas con un enfoque en el desarrollo humano sustentable."
+    />
+    <meta
+      name="keywords"
+      content="Universidad Valle del Momboy, UVM, educación superior, carreras, ingeniería en computación, derecho, administración de empresas"
+    />
 
-<head>
-    <title>UVM</title> <!-- Título de la página web -->
-    <meta charset="UTF-8"> <!-- Configuración de caracteres -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configuración de la vista en dispositivos móviles -->
-    <link rel="stylesheet" href="css/estilos.css"> <!-- Enlace a la hoja de estilos CSS externa -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet"> <!-- Enlace a una fuente de Google Fonts -->
-    <script src="https://kit.fontawesome.com/04e0763c43.js" crossorigin="anonymous"></script> <!-- Enlace al kit de iconos Font Awesome -->
-</head>
+    <meta http-equiv="content-language" content="es" />
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link rel="icon" href="assets/img/Logo UVM.png" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/04e0763c43.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
 <body>
+        <header>
 
-    <header>
+            <!-- Cabecera e Introducción -->
+          
+            <nav aria-label="Menú de navegación principal">
+              <input type="checkbox" id="menu" class="menu-toggle" />
+              <label for="menu" class="hamburger">☰</label>
+              <ul class="nav-list">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="#">Información</a></li>
+                <li><a href="#">Carreras</a></li>
+                <li><a href="#">Contacto</a></li>
+              </ul>
+            </nav>
+          
+            <section class="contenedor-header">
+              <h1>¡Bienvenido a la Universidad Valle del Momboy (UVM)!</h1> <!-- Título principal de bienvenida -->
+              <h2>- El Futuro que sueñas -</h2> <!-- Subtítulo de bienvenida -->
+            </section>
+        </header>
+    </body>
+    
+    <section class="contenedor-profesores">
+      <div class="contenedor">
+          <h2 class="titulo">Que dicen nuestros docentes</h2>
+          <!-- Cartas de los profesores -->
+          <div class="cartas-profesor">
+              <div class="carta-individual">
+                  <img src="assets/img/profesor1.jpg" alt="Foto de Roberto" />
+                  <div class="contenido-texto-carta">
+                      <h4>Roberto</h4>
+                      <p>Aprende, no para acumular conocimientos como un tesoro personal, sino para emplear lo aprendido al servicio del mundo.</p>
+                  </div>
+              </div>
+  
+              <div class="carta-individual">
+                  <img src="assets/img/profesor3.avif" alt="Foto de Luis" />
+                  <div class="contenido-texto-carta">
+                      <h4>Luis</h4>
+                      <p>El buen maestro hace que el mal estudiante se convierta en bueno y el buen estudiante en superior.</p>
+                  </div>
+              </div>
+  
+              <div class="carta-individual">
+                  <img src="assets/img/profesor2.webp" alt="Foto de Xavier" />
+                  <div class="contenido-texto-carta">
+                      <h4>Xavier</h4>
+                      <p>La humanidad no es mala, solo está... Desinformada.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section> 
 
-        <!-- Cabecera e Introducción -->
+<!-- Contenedor de las carreras -->
+<section class="contenedor-carreras">
+  <div class="contenedor">
+      <h2 class="titulo">Carreras que ofertamos</h2>
+      <div class="carrusel">
+          <!-- Carrera 1 -->
+          <div class="carrera activo">
+              <img src="assets/img/carrousel1.jpg" alt="Ingeniería en Computación" class="imagen-carrera">
+              <div class="info-carrera">
+                  <h3>Ingeniería en Computación</h3>
+                  <p>
+                      La Ingeniería en Computación es una disciplina en constante evolución que combina la informática, la electrónica y la ingeniería para formar profesionales altamente capacitados en la creación y gestión de sistemas de computadoras y software.
+                  </p>
+              </div>
+          </div>
+          <!-- Carrera 2 -->
+          <div class="carrera">
+              <img src="assets/img/carrousel2.jpg" alt="Derecho" class="imagen-carrera">
+              <div class="info-carrera">
+                  <h3>Derecho</h3>
+                  <p>
+                      El Derecho es una disciplina fascinante y fundamental que rige nuestra sociedad y define nuestras interacciones. Los abogados son los guardianes de la justicia, defensores de los derechos humanos y solucionadores de conflictos.
+                  </p>
+              </div>
+          </div>
+          <!-- Carrera 3 -->
+          <div class="carrera">
+              <img src="assets/img/carrousel3.jpg" alt="Administración de Empresas" class="imagen-carrera">
+              <div class="info-carrera">
+                  <h3>Administración de Empresas</h3>
+                  <p>
+                      Lo que hace que esta carrera sea tan atractiva es su amplitud. Puedes especializarte en áreas como marketing, finanzas, recursos humanos, gestión de proyectos, emprendimiento y muchas otras.
+                  </p>
+              </div>
+          </div>
+      </div> 
+  </div>
+</section>
 
-        <nav>
-            <!-- Menú de navegación -->
-            <a href="#">Inicio</a>
-            <a href="#">Acerca de</a>
-            <a href="#">Información</a>
-            <a href="#">Carreras</a>
-            <a href="#">Contacto</a>
-        </nav>
 
-        <!-- Sección "Inicio" hecha por Yony Araujo -->
-
-        <section class="contenedor-header">
-            <h1>¡Bienvenido a la Universidad Valle del Momboy (UVM)!</h1> <!-- Título principal de bienvenida -->
-            <h2>La Universidad de tus Sueños</h2> <!-- Subtítulo de bienvenida -->
-        </section>
-
-        <div class="estilo-ola" style="height: 150px; overflow: hidden;">
-            <svg viewBox="0 0 450 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
-                <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
-                    style="stroke: none; fill: #fff"></path>
-            </svg>
+<section class="formulario">
+  <div class="contenedor-formulario">
+    <div class="registro-invitacion">
+      <h2>¡Regístrate Ahora!</h2>
+      <p>Completa el formulario y forma parte de la nuestra comunidad UVM.</p>
+    </div>
+    <div class="formulario-datos">
+      <h2>Formulario de datos</h2>
+      <form action="database.php" method="post">
+        <label for="nombre">Nombre Completo:</label>
+        <input type="text" name="nombre" id="nombre" required />
+        <label for="correo">Correo Electrónico:</label>
+        <input type="email" name="correo" id="correo" required />
+        <label for="ciudad">Ciudad:</label>
+        <input type="text" name="ciudad" id="ciudad" required />
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" name="telefono" id="telefono" required />
+        <label for="comentarios">Comentarios:</label>
+        <textarea name="comentarios" id="comentarios" rows="4"></textarea>
+        <div class="botones">
+          <button type="submit" name="enviar">Enviar Datos</button>
+          <button type="reset">Borrar Datos</button>
         </div>
-
-    </header>
-
-    <main>
-
-        <!-- Contenido Principal de la página web -->
-
-        <!-- Sección "Acerca de" hecha por Diego Briceño -->
-
-        <section class="contenedor-acerca-de">
-            <div class="contenedor">
-                <h2 class="titulo">Acerca de la UVM</h2> <!-- Título de la sección "Acerca de" -->
-                <div class="contenido-acerca-de">
-
-                    <div class="contenido-individual-acerca-de">
-                        <img src="img/mision2.png" alt=""> <!-- Imagen relacionada con la misión de la UVM -->
-                        <h3>Misión</h3> <!-- Título de la misión -->
-                        <p>
-                            Promover con ética y calidad procesos de relevancia que propicien el Desarrollo Humano Sustentable, 
-                            mediante la formación integral de personas altamente participativas, competentes y emprendedoras; 
-                            la investigación con pertinencia social y la interacción activa con el entorno.
-                        </p> <!-- Descripción de la misión -->
-                    </div>
-
-                    <div class="contenido-individual-acerca-de">
-                        <img src="img/vision2.png" alt=""> <!-- Imagen relacionada con la visión de la UVM -->
-                        <h3>Visión</h3> <!-- Título de la visión -->
-                        <p>
-                            Nuestra misión es proporcionar a nuestros estudiantes una educación que no solo enriquezca sus conocimientos 
-                            y habilidades, sino que también fomente un profundo sentido de responsabilidad hacia el medio ambiente y la sociedad 
-                            en general. Creemos en la importancia de formar ciudadanos conscientes y comprometidos con la sostenibilidad.
-                        </p> <!-- Descripción de la visión -->
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Sección "profesores" hecha por Diego Briceño -->
-
-        <section class="contenedor-profesores">
-            <div class="contenedor">
-                <h2 class="titulo">Que dicen nuestros docentes</h2> <!-- Título de la sección "profesores" -->
-                <div class="cartas-profesor">
-
-                    <div class="carta-individual">
-                        <img src="img/profesor1.jpg" alt=""> <!-- Imagen del primer profesor -->
-                        <div class="contenido-texto-carta">
-                            <h4>Roberto</h4> <!-- Nombre del primer profesor -->
-                            <p>
-                                Aprende, no para acumular conocimientos como un tesoro personal, sino para emplear lo aprendido al servicio del mundo.
-                            </p> <!-- Cita del primer profesor -->
-                        </div>
-                    </div>
-
-                    <div class="carta-individual">
-                        <img src="img/profesor3.avif" alt=""> <!-- Imagen del segundo profesor -->
-                        <div class="contenido-texto-carta">
-                            <h4>Luis</h4> <!-- Nombre del segundo profesor -->
-                            <p>
-                                El buen maestro hace que el mal estudiante se convierta en bueno y el buen estudiante en superior.
-                            </p> <!-- Cita del segundo profesor -->
-                        </div>
-                    </div>
-
-                    <div class="carta-individual">
-                        <img src="img/profesor2.webp" alt=""> <!-- Imagen del tercer profesor -->
-                        <div class="contenido-texto-carta">
-                            <h4>Xavier</h4> <!-- Nombre del tercer profesor -->
-                            <p>
-                                La humanidad no es mala, solo está... Desinformada.
-                            </p> <!-- Cita del tercer profesor -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Sección "Carreras" hecha por Diego Briceño -->
-
-        <section class="contenedor-carreras">
-            <div class="contenedor">
-                <h2 class="titulo">Carreras que ofertamos</h2> <!-- Título de la sección "Carreras" -->
-                <div class="contenedor-carreras-ofertadas">
-                    <img src="img/carreras.png" alt="" class="imagen-carreras"> <!-- Imagen relacionada con las carreras -->
-                    <div class="contenido-carreras">
-                        <h3><span>1</span>Ingeniería en Computación</h3> <!-- Título de la primera carrera -->
-                        <p>
-                            La Ingeniería en Computación es una disciplina en constante evolución que combina 
-                            la informática, la electrónica y la ingeniería para formar profesionales altamente 
-                            capacitados en la creación y gestión de sistemas de computadoras y software.
-                        </p> <!-- Descripción de la primera carrera -->
-                        <h3><span>2</span>Derecho</h3> <!-- Título de la segunda carrera -->
-                        <p>
-                            El Derecho es una disciplina fascinante y fundamental que rige nuestra sociedad y 
-                            define nuestras interacciones. Los abogados son los guardianes de la justicia, 
-                            defensores de los derechos humanos y solucionadores de conflictos.
-                        </p> <!-- Descripción de la segunda carrera -->
-                        <h3><span>3</span>Administración de Empresas</h3> <!-- Título de la tercera carrera -->
-                        <p>
-                            Lo que hace que esta carrera sea tan atractiva es su amplitud. Puedes especializarte 
-                            en áreas como marketing, finanzas, recursos humanos, gestión de proyectos, emprendimiento 
-                            y muchas otras. Esto te brinda la flexibilidad para adaptar tu educación a tus intereses y 
-                            aspiraciones profesionales.
-                        </p> <!-- Descripción de la tercera carrera -->
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Sección "Formulario" hecha por Jesus Garcia -->
-
-        <section class="formulario">
-            <div class="contenedor">
-                <h2 class="titulo">Formulario de datos</h2> <!-- Título de la sección "Formulario" -->
-                <form action="database.php" method="post">
-                    <label for="nombre">Nombre Completo:</label> <!-- Etiqueta del campo Nombre Completo -->
-                    <input type="text" name="nombre" id="nombre" required> <!-- Campo para ingresar el nombre (obligatorio) -->
-                    <label for="correo">Correo Electrónico:</label> <!-- Etiqueta del campo Correo Electrónico -->
-                    <input type="email" name="correo" id="correo" required> <!-- Campo para ingresar el correo (obligatorio) -->
-                    <label for="ciudad">Ciudad:</label> <!-- Etiqueta del campo Ciudad -->
-                    <input type="text" name="ciudad" id="ciudad" required> <!-- Campo para ingresar la ciudad (obligatorio) -->
-                    <label for="telefono">Teléfono:</label> <!-- Etiqueta del campo Teléfono -->
-                    <input type="tel" name="telefono" id="telefono" required> <!-- Campo para ingresar el teléfono (obligatorio) -->
-                    <label for="comentarios">Comentarios:</label> <!-- Etiqueta del campo Comentarios -->
-                    <textarea name="comentarios" id="comentarios" rows="4"></textarea> <!-- Campo para ingresar comentarios (opcional) -->
-                    <button type="submit" name="enviar">Enviar Datos</button> <!-- Botón para enviar el formulario -->
-                    <button type="reset">Borrar Datos</button> <!-- Botón para borrar los datos ingresados en el formulario -->
-                </form>
-            </div>
-        </section>
-
-    </main>
-
-    <!-- Sección Pie de página y Redes sociales hecha por Jesus Garcia -->
+      </form>
+    </div>
+  </div>
+</section>
+</main>
 
     <footer>
-
-        <div class="contenedor-footer">
-            <div class="contenido-footer">
-                <h4>Teléfono</h4>
-                <p>+58 123 456 789</p> <!-- Número de teléfono ficticio -->
-            </div>
-            <div class="contenido-footer">
-                <h4>Email</h4>
-                <p>contacto@universidadmomboy.edu.ve</p> <!-- Correo electrónico ficticio -->
-            </div>
-            <div class ="contenido-footer">
-                <h4>Localización</h4>
-                <p>123 Universidad St, Ciudad Ficticia</p> <!-- Ubicación ficticia -->
-            </div>
+      <div class="contenedor-footer">
+        <div class="contenido-footer">
+          <h4>TELEFONO</h4>
+          <p>+58 123 456 789</p>
+          <!-- Número de teléfono ficticio -->
         </div>
-
-        <h2 class="titulo-final">Contáctanos</h2> <!-- Título de la sección "Contáctanos" -->
-
-        <div class="redes-sociales">
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-facebook"></i>
-            <i class="fa-brands fa-twitter"></i>
+        <div class="contenido-footer">
+          <h4>EMAIL</h4>
+          <p>uvm.edu.ve</p>
+          <!-- Correo electrónico ficticio -->
         </div>
+        <div class="contenido-footer">
+          <h4>LOCALIZACION</h4>
+          <p>123 Universidad St, Ciudad Ficticia</p>
+          <!-- Ubicación ficticia -->
+        </div>
+      </div>
 
+      <h2 class="contacto">Contáctanos</h2>
+      <!-- Título de la sección "Contáctanos" -->
+
+      <div class="redes-sociales">
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+      </div>
     </footer>
-
-</body>
-
+    <script>
+      let currentSlide = 0;
+      const slides = document.querySelectorAll('.carrera');
+      const totalSlides = slides.length;
+      const carousel = document.querySelector('.carrusel');
+      
+      // Mostrar slide basado en el índice
+      function showSlide(index) {
+          // Asegurar que el índice esté dentro del rango válido
+          if (index >= totalSlides) {
+              currentSlide = 0; // Regresar al primer slide
+          } else if (index < 0) {
+              currentSlide = totalSlides - 1; // Ir al último slide
+          } else {
+              currentSlide = index;
+          }
+      
+          // Calcular el desplazamiento y aplicarlo
+          const offset = -currentSlide * 100; // Calcular el desplazamiento
+          carousel.style.transform = `translateX(${offset}%)`;
+      }
+      
+      // Cambiar de slide
+      function changeSlide(direction) {
+          showSlide(currentSlide + direction);
+      }
+      
+      // Cambiar de slide automáticamente
+      const autoSlideInterval = setInterval(() => {
+          changeSlide(1); // Cambiar al siguiente slide
+      }, 8000);
+      
+      // Mostrar el primer slide al cargar
+      showSlide(currentSlide);
+      </script>
+      
+  </body>
 </html>
