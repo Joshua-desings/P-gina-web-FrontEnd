@@ -1,2 +1,5 @@
+# Ignorar archivos y carpetas específicas 
 config.php
 node_modules
+dist
+build
