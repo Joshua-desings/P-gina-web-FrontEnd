@@ -34,64 +34,101 @@
     ></script>
   </head>
 
-<body>
-        <header>
+  <body>
+    <header>
+        <!-- Cabecera e Introducción -->
+        <nav class="barra-navegacion" aria-label="Menú de navegación principal">
+          <input type="checkbox" id="menu" class="menu-toggle" />
+          <label for="menu" class="hamburger">☰</label>
+            <ul class="nav-list">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#acerca-de">Acerca de</a></li>
+                <li><a href="#docentes">Docentes</a></li>
+                <li><a href="#cursos">Carreras</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
 
-            <!-- Cabecera e Introducción -->
-          
-            <nav aria-label="Menú de navegación principal">
-              <input type="checkbox" id="menu" class="menu-toggle" />
-              <label for="menu" class="hamburger">☰</label>
-              <ul class="nav-list">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Acerca de</a></li>
-                <li><a href="#">Información</a></li>
-                <li><a href="#">Carreras</a></li>
-                <li><a href="#">Contacto</a></li>
-              </ul>
-            </nav>
-          
-            <section class="contenedor-header">
-              <h1>¡Bienvenido a la Universidad Valle del Momboy (UVM)!</h1> <!-- Título principal de bienvenida -->
-              <h2>- El Futuro que sueñas -</h2> <!-- Subtítulo de bienvenida -->
-            </section>
-        </header>
-    </body>
-    
-    <section class="contenedor-profesores">
+        <!-- Sección de cabecera principal -->
+        <section id="inicio" class="contenedor-header">
+            <h1>¡Bienvenido a la Universidad Valle del Momboy (UVM)!</h1>
+            <h2>- El Futuro que sueñas -</h2>
+        </section>
+    </header>
+
+    <!-- Sección de Acerca de -->
+    <section id="acerca-de" class="contenedor-acerca-de">
       <div class="contenedor">
-          <h2 class="titulo">Que dicen nuestros docentes</h2>
-          <!-- Cartas de los profesores -->
-          <div class="cartas-profesor">
-              <div class="carta-individual">
-                  <img src="assets/img/profesor1.jpg" alt="Foto de Roberto" />
-                  <div class="contenido-texto-carta">
-                      <h4>Roberto</h4>
-                      <p>Aprende, no para acumular conocimientos como un tesoro personal, sino para emplear lo aprendido al servicio del mundo.</p>
-                  </div>
+        <h2 class="titulo">Acerca de la UVM</h2>
+        <div class="contenido-acerca-de">
+          <!-- Misión -->
+          <div class="contenido-individual-acerca-de">
+            <div class="imagen-container">
+              <img src="assets/img/mision.jpg" alt="Imagen de Misión">
+              <div class="texto-container">
+                <h3>Misión</h3>
+                <p>
+                  Promover con ética y calidad procesos de relevancia que propicien el Desarrollo Humano Sustentable, mediante la
+                  formación integral de personas altamente participativas, competentes y emprendedoras; la investigación con pertinencia
+                  social y la interacción activa con el entorno.
+                </p>
               </div>
-  
-              <div class="carta-individual">
-                  <img src="assets/img/profesor3.avif" alt="Foto de Luis" />
-                  <div class="contenido-texto-carta">
-                      <h4>Luis</h4>
-                      <p>El buen maestro hace que el mal estudiante se convierta en bueno y el buen estudiante en superior.</p>
-                  </div>
-              </div>
-  
-              <div class="carta-individual">
-                  <img src="assets/img/profesor2.webp" alt="Foto de Xavier" />
-                  <div class="contenido-texto-carta">
-                      <h4>Xavier</h4>
-                      <p>La humanidad no es mala, solo está... Desinformada.</p>
-                  </div>
-              </div>
+            </div>
           </div>
+  
+          <!-- Visión -->
+          <div class="contenido-individual-acerca-de">
+            <div class="imagen-container">
+              <img src="assets/img/vision.jpg" alt="Imagen de Visión">
+              <div class="texto-container">
+                <h3>Visión</h3>
+                <p>
+                  Nuestra misión es proporcionar a nuestros estudiantes una educación que no solo enriquezca sus conocimientos y habilidades,
+                  sino que también fomente un profundo sentido de responsabilidad hacia el medio ambiente y la sociedad en general. Creemos en
+                  la importancia de formar ciudadanos conscientes y comprometidos con la sostenibilidad.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-  </section> 
+    </section>
 
-<!-- Contenedor de las carreras -->
-<section class="contenedor-carreras">
+    <!-- Sección de Docentes -->
+    <section id="docentes" class="contenedor-profesores">
+        <div class="contenedor">
+            <h2 class="titulo">Qué dicen nuestros docentes</h2>
+            <!-- Cartas de los profesores -->
+            <div class="cartas-profesor">
+                <div class="carta-individual">
+                    <img src="assets/img/profesor1.jpg" alt="Foto de Roberto" />
+                    <div class="contenido-texto-carta">
+                        <h4>Roberto</h4>
+                        <p>Aprende, no para acumular conocimientos como un tesoro personal, sino para emplear lo aprendido al servicio del mundo.</p>
+                    </div>
+                </div>
+
+                <div class="carta-individual">
+                    <img src="assets/img/profesor3.avif" alt="Foto de Luis" />
+                    <div class="contenido-texto-carta">
+                        <h4>Luis</h4>
+                        <p>El buen maestro hace que el mal estudiante se convierta en bueno y el buen estudiante en superior.</p>
+                    </div>
+                </div>
+
+                <div class="carta-individual">
+                    <img src="assets/img/profesor2.webp" alt="Foto de Xavier" />
+                    <div class="contenido-texto-carta">
+                        <h4>Xavier</h4>
+                        <p>La humanidad no es mala, solo está... Desinformada.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Carreras -->
+<section id="cursos" class="contenedor-carreras">
   <div class="contenedor">
       <h2 class="titulo">Carreras que ofertamos</h2>
       <div class="carrusel">
@@ -101,7 +138,7 @@
               <div class="info-carrera">
                   <h3>Ingeniería en Computación</h3>
                   <p>
-                      La Ingeniería en Computación es una disciplina en constante evolución que combina la informática, la electrónica y la ingeniería para formar profesionales altamente capacitados en la creación y gestión de sistemas de computadoras y software.
+                      Desarrolla habilidades para diseñar software y sistemas tecnológicos, y conoce el futuro de la inteligencia artificial y la ciencia de datos. Ideal para quienes buscan innovar y transformar el mundo digital.
                   </p>
               </div>
           </div>
@@ -111,7 +148,7 @@
               <div class="info-carrera">
                   <h3>Derecho</h3>
                   <p>
-                      El Derecho es una disciplina fascinante y fundamental que rige nuestra sociedad y define nuestras interacciones. Los abogados son los guardianes de la justicia, defensores de los derechos humanos y solucionadores de conflictos.
+                      Forma parte de una disciplina que regula la convivencia social y la justicia. Prepárate para ser un defensor de los derechos humanos, asesor legal o resolver conflictos en el ámbito jurídico.
                   </p>
               </div>
           </div>
@@ -121,107 +158,111 @@
               <div class="info-carrera">
                   <h3>Administración de Empresas</h3>
                   <p>
-                      Lo que hace que esta carrera sea tan atractiva es su amplitud. Puedes especializarte en áreas como marketing, finanzas, recursos humanos, gestión de proyectos, emprendimiento y muchas otras.
+                      Aprende a dirigir y gestionar negocios exitosos, con una visión estratégica y habilidades de liderazgo. Ideal para quienes desean emprender o liderar empresas a nivel global.
                   </p>
               </div>
           </div>
-      </div> 
+      </div>
   </div>
 </section>
 
 
-<section class="formulario">
-  <div class="contenedor-formulario">
-    <div class="registro-invitacion">
-      <h2>¡Regístrate Ahora!</h2>
-      <p>Completa el formulario y forma parte de la nuestra comunidad UVM.</p>
-    </div>
-    <div class="formulario-datos">
-      <h2>Formulario de datos</h2>
-      <form action="database.php" method="post">
-        <label for="nombre">Nombre Completo:</label>
-        <input type="text" name="nombre" id="nombre" required />
-        <label for="correo">Correo Electrónico:</label>
-        <input type="email" name="correo" id="correo" required />
-        <label for="ciudad">Ciudad:</label>
-        <input type="text" name="ciudad" id="ciudad" required />
-        <label for="telefono">Teléfono:</label>
-        <input type="tel" name="telefono" id="telefono" required />
-        <label for="comentarios">Comentarios:</label>
-        <textarea name="comentarios" id="comentarios" rows="4"></textarea>
-        <div class="botones">
-          <button type="submit" name="enviar">Enviar Datos</button>
-          <button type="reset">Borrar Datos</button>
+    <!-- Sección de Contacto -->
+    <section id="contacto" class="formulario">
+        <div class="contenedor-formulario">
+            <div class="registro-invitacion">
+                <h2>¡Regístrate Ahora!</h2>
+                <p>Completa el formulario y forma parte de la nuestra comunidad UVM.</p>
+            </div>
+            <div class="formulario-datos">
+                <h2>Formulario de datos</h2>
+                <form action="database.php" method="post">
+                    <label for="nombre">Nombre Completo:</label>
+                    <input type="text" name="nombre" id="nombre" required />
+                    <label for="correo">Correo Electrónico:</label>
+                    <input type="email" name="correo" id="correo" required />
+                    <label for="ciudad">Ciudad:</label>
+                    <input type="text" name="ciudad" id="ciudad" required />
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" name="telefono" id="telefono" required />
+                    <label for="comentarios">Comentarios:</label>
+                    <textarea name="comentarios" id="comentarios" rows="4"></textarea>
+                    <div class="botones">
+                        <button type="submit" name="enviar">Enviar Datos</button>
+                        <button type="reset">Borrar Datos</button>
+                    </div>
+                </form>
+            </div>
         </div>
-      </form>
-    </div>
-  </div>
-</section>
-</main>
+    </section>
 
     <footer>
-      <div class="contenedor-footer">
-        <div class="contenido-footer">
-          <h4>TELEFONO</h4>
-          <p>+58 123 456 789</p>
-          <!-- Número de teléfono ficticio -->
+        <div class="contenedor-footer">
+            <div class="contenido-footer">
+                <h4>TELÉFONO</h4>
+                <p>+58 123 456 789</p>
+            </div>
+            <div class="contenido-footer">
+                <h4>EMAIL</h4>
+                <p>correo@uvm.edu.ve</p>
+            </div>
+            <div class="contenido-footer">
+                <h4>LOCALIZACIÓN</h4>
+                <p>123 Universidad St, Ciudad Ficticia</p>
+            </div>
         </div>
-        <div class="contenido-footer">
-          <h4>EMAIL</h4>
-          <p>uvm.edu.ve</p>
-          <!-- Correo electrónico ficticio -->
+        <h2 class="contacto">Contáctanos</h2>
+        <div class="redes-sociales">
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
         </div>
-        <div class="contenido-footer">
-          <h4>LOCALIZACION</h4>
-          <p>123 Universidad St, Ciudad Ficticia</p>
-          <!-- Ubicación ficticia -->
-        </div>
-      </div>
-
-      <h2 class="contacto">Contáctanos</h2>
-      <!-- Título de la sección "Contáctanos" -->
-
-      <div class="redes-sociales">
-        <i class="fab fa-instagram"></i>
-        <i class="fab fa-facebook"></i>
-        <i class="fa-brands fa-twitter"></i>
-      </div>
     </footer>
+
+    <!-- Script para el desplazamiento suave -->
     <script>
-      let currentSlide = 0;
-      const slides = document.querySelectorAll('.carrera');
-      const totalSlides = slides.length;
-      const carousel = document.querySelector('.carrusel');
-      
-      // Mostrar slide basado en el índice
-      function showSlide(index) {
-          // Asegurar que el índice esté dentro del rango válido
-          if (index >= totalSlides) {
-              currentSlide = 0; // Regresar al primer slide
-          } else if (index < 0) {
-              currentSlide = totalSlides - 1; // Ir al último slide
-          } else {
-              currentSlide = index;
-          }
-      
-          // Calcular el desplazamiento y aplicarlo
-          const offset = -currentSlide * 100; // Calcular el desplazamiento
-          carousel.style.transform = `translateX(${offset}%)`;
-      }
-      
-      // Cambiar de slide
-      function changeSlide(direction) {
-          showSlide(currentSlide + direction);
-      }
-      
-      // Cambiar de slide automáticamente
-      const autoSlideInterval = setInterval(() => {
-          changeSlide(1); // Cambiar al siguiente slide
-      }, 8000);
-      
-      // Mostrar el primer slide al cargar
-      showSlide(currentSlide);
-      </script>
-      
-  </body>
+        // Obtener todos los enlaces con anclas en la barra de navegación
+        const enlaces = document.querySelectorAll('.barra-navegacion a[href^="#"]');
+
+        enlaces.forEach(enlace => {
+            enlace.addEventListener('click', function(event) {
+                event.preventDefault(); // Evitar el comportamiento por defecto
+                const id = this.getAttribute('href'); // Obtener el id del destino
+                const seccion = document.querySelector(id); // Obtener la sección correspondiente
+
+                // Desplazarse suavemente a la sección seleccionada
+                seccion.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+        });
+
+        // Script para el carrusel de carreras
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.carrera');
+        const totalSlides = slides.length;
+        const carousel = document.querySelector('.carrusel');
+
+        function showSlide(index) {
+            if (index >= totalSlides) {
+                currentSlide = 0;
+            } else if (index < 0) {
+                currentSlide = totalSlides - 1;
+            } else {
+                currentSlide = index;
+            }
+
+            const offset = -currentSlide * 100;
+            carousel.style.transform = `translateX(${offset}%)`;
+        }
+
+        function changeSlide(direction) {
+            showSlide(currentSlide + direction);
+        }
+
+        const autoSlideInterval = setInterval(() => {
+            changeSlide(1);
+        }, 8000);
+
+        showSlide(currentSlide);
+    </script>
+</body>
 </html>

@@ -299,6 +299,7 @@ header::before {
     cursor: pointer;
     text-align: center;
     color: white;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra para el contenedor */
 }
 
 .contenido-individual-acerca-de:hover {
@@ -307,7 +308,7 @@ header::before {
 
 .imagen-container {
     width: 100%;
-    height: 250px; /* Ajuste de altura según preferencias */
+    height: 280px; /* Ajuste de altura según preferencias */
     position: relative;
     background-color: rgba(192, 230, 192, 0.7); /* Fondo verde con transparencia */
     display: flex;
@@ -330,14 +331,15 @@ header::before {
     height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     z-index: 2;
     transition: opacity 0.3s ease;
 }
 
 /* Estilos del título principal (Misión o Visión) */
 .texto-container h3 {
+    position: absolute;
     font-size: 30px;
     font-weight: bold;
     opacity: 1;
@@ -346,12 +348,15 @@ header::before {
 
 /* Estilos del párrafo descriptivo */
 .texto-container p {
-    font-size: 24px;
+    font-size: 16px;
     font-weight: 500;
     opacity: 0;
-    padding: 0 5px;
+    padding: 0 15px;
+    background: rgba(136, 196, 38, 0.1); /* Color verde con 50% de opacidad */
+    color: white;
     transition: opacity 0.5s ease;
-    line-height: 1.6;
+    line-height: 1.8;
+    display: inline-block; /* Para que el padding funcione correctamente */
 }
 
 /* Al pasar el mouse, el título se oculta y el párrafo aparece */
@@ -375,7 +380,7 @@ header::before {
 
     /* Estilos del párrafo descriptivo */
     .texto-container p {
-    font-size: small;
+    font-size: 16px;
     font-weight: 500;
     opacity: 0;
     transition: opacity 0.5s ease;
@@ -394,12 +399,11 @@ header::before {
 
       /* Estilos del párrafo descriptivo */
       .texto-container p {
-        font-size: xx-small;
+        font-size: 14px;
         font-weight: 500;
         opacity: 0;
         transition: opacity 0.5s ease;
-        line-height: 1.2;
-        line-break: strict;
+        line-height: 1.5;
     }
 }
 
@@ -479,61 +483,99 @@ header::before {
     }
 }
 
-/* Carreras que ofertamos*/
-
 /* Estilos generales para el contenedor del carrusel */
 .section {
     position: relative;
     overflow: hidden;
     width: 100%;
-    max-width: 1200px; /* Ajusta según el tamaño deseado */
+    max-width: 1200px;
     margin: auto;
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra para el contenedor */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 /* Estilos para el carrusel */
 .carrusel {
     display: flex;
-    transition: transform 0.5s ease-in-out; /* Suaviza la transición */
+    transition: transform 0.5s ease-in-out;
 }
 
 .carrera {
-    flex: 0 0 100%; /* Cada carrera ocupa el 100% del ancho del contenedor */
+    flex: 0 0 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Espacio entre imagen y texto */
-    padding: 20px; /* Espacio interno para cada carta */
-    position: relative; /* Para que los botones se posicionen dentro */
+    padding: 20px;
+    position: relative;
+    flex-direction: row; /* Mantener el layout en fila para pantallas grandes */
 }
 
 .imagen-carrera {
-    height: 100%; /* Ocupa el 100% de la altura del contenedor */
-    max-height: 600px; /* Ajusta según el tamaño deseado */
-    width: 50%; /* La imagen ocupa el 50% del ancho */
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Sombra para la imagen */
-    object-fit: cover; /* Asegura que la imagen cubra completamente el área */
+    height: 100%;
+    max-height: 400px; /* Ajusta según el tamaño deseado */
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
 }
 
 .info-carrera {
-    width: 45%; /* La información ocupa el 45% del ancho */
-    text-align: left; /* Alinear el texto a la izquierda */
-    padding: 20px; /* Espaciado interno */
+    width: 35%;
+    text-align: left;
+    padding: 30px;
 }
 
 .info-carrera h3 {
-    font-size: 1.6rem; /* Tamaño del título de la carrera */
-    color: #1d555b; /* Color del título */
-    margin-bottom: 15px; /* Espacio inferior */
+    font-size: 1.6rem;
+    color: #1d555b;
+    margin-bottom: 15px;
 }
 
 .info-carrera p {
-    font-size: 1rem; /* Tamaño del texto */
-    line-height: 1.6; /* Altura de línea para mejorar legibilidad */
-    color: #555; /* Color del texto */
-    margin-right: 25%;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
 }
+
+/* Responsivo para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    .carrusel {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+    
+    .carrera {
+        flex: 0 0 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px;
+        position: relative;
+        flex-direction: column;
+    }
+
+    .imagen-carrera {
+        width: 80%; /* Imagen ocupa todo el ancho */
+        max-height: 240px; /* Reducir aún más el tamaño de la imagen */
+        margin-bottom: 10px;
+    }
+    
+    .info-carrera {
+        width: 65%;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .info-carrera h3 {
+        font-size: 1.4rem; /* Reducir tamaño del título */
+        
+    }
+
+    .info-carrera p {
+        font-size: 0.9rem; /* Reducir tamaño del texto */
+        margin-right: none;
+    }
+}
+
 
 
 /* Estilos para el formulario */
@@ -636,19 +678,38 @@ header::before {
     background-color: #c82333; /* Color más oscuro al pasar el mouse */
   }
   
+  /* Responsivo para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    .registro-invitacion {
+        display: none;
+    }
+
+      button {
+        padding: 12px;
+        border: none;
+        border-radius: 6px;
+        background-color: #007bff; /* Color del botón */
+        color: white;
+        cursor: pointer;
+        font-size: 16px; /* Tamaño de fuente más grande */
+        transition: background-color 0.3s ease; /* Transición para el fondo */
+      }
+}
 
 /* Pie de pagina */
 
-footer{
+footer {
     background: #1d555b;
-    padding: 60px 0 30px 0;
+    padding: 60px 0 30px;
     margin: auto;
     overflow: hidden;
+    color: #fff; /* Color de texto general para mejor legibilidad */
+    border-bottom: 15px solid #003C44;
 }
 
-
-.contenedor-footer{
+.contenedor-footer {
     display: flex;  /* Usamos flexbox para colocar elementos en fila */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en múltiples filas */
     width: 90%;
     justify-content: space-evenly;
     margin: auto;
@@ -657,41 +718,58 @@ footer{
     align-items: center; /* Centramos verticalmente los elementos */
 }
 
-.contenido-footer{
+.contenido-footer {
     text-align: center;
+    flex: 1; /* Permite que los elementos crezcan de manera uniforme */
+    min-width: 150px; /* Tamaño mínimo para que no se reduzcan demasiado en pantallas pequeñas */
 }
 
-.contenido-footer h4{
-
+.contenido-footer h4 {
     color: #88C426;
     padding-bottom: 5px;
     margin-bottom: 20px;
-    text-align: center;
+    font-size: 1.1rem;
     border: none;
 }
 
-.contenido-footer p{
-    color: #fff;
-    border-bottom: 1px solid #f2f2f2;
+.contenido-footer p {
+    color: #faf9f9; /* Color de texto claro para mejor contraste */
     padding-bottom: 20px;
+    font-size: 16px;
 }
 
 .contacto {
     text-align: center;
-    font-size: 24px;
+    font-size: 1.5rem; /* Tamaño de fuente más grande y accesible */
     margin: 20px 0 0;
     color: #88C426;
 }
 
 .redes-sociales {
-    font-size: 24px; /* Tamaño de los íconos */
+    font-size: 2rem; /* Tamaño de los íconos */
     text-align: center;
     padding: 10px;
-    color: #faf9f9; /* Color de los íconos, ajusta según tu diseño */
+    color: #faf9f9; /* Color de los íconos */
     text-decoration: none;
     transition: transform 0.3s ease-in-out; /* Agrega una animación de transformación */
 }
 
 .redes-sociales:hover {
     transform: scale(1.2); /* Hace que los íconos se agranden al pasar el mouse */
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    .contenedor-footer {
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+        align-items: center; /* Centra los elementos horizontalmente */
+    }
+
+    .contenido-footer {
+        margin-bottom: 20px; /* Espacio entre los elementos */
+    }
+
+    .contacto {
+        font-size: 1.2rem; /* Ajusta el tamaño de la fuente en pantallas pequeñas */
+    }
 }
